@@ -1,6 +1,6 @@
 {
   "name": "react-mixed-text",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component that gives every word its own font and decoration: mixed, editorial-style text from a plain string.",
   "license": "MIT",
   "author": "Bilal Qamar <bilalqamardeen@gmail.com>",
