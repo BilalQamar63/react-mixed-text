@@ -4,7 +4,10 @@
   "description": "React component that gives every word its own font and decoration: mixed, editorial-style text from a plain string.",
   "license": "MIT",
   "author": "Bilal Qamar <bilalqamardeen@gmail.com>",
-  "repository": { "type": "git", "url": "git+https://github.com/BilalQamar63/mixed-text.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BilalQamar63/mixed-text.git"
+  },
   "homepage": "https://github.com/BilalQamar63/mixed-text#readme",
   "bugs": "https://github.com/BilalQamar63/mixed-text/issues",
   "type": "module",
