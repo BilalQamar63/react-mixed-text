@@ -13,8 +13,6 @@ Each word picks one of 18 built-in styles. The pick is **deterministic**: the sa
 `seed` always give the same arrangement, on the server and in the browser. A word never gets the
 same style or font as the word before it.
 
-> The package name is a placeholder. See [Publishing](#publishing).
-
 ## Install
 
 ```bash
@@ -170,17 +168,6 @@ pnpm verify       # typecheck, lint, format, test, build, dist check, npm pack d
 ```
 
 `dev` runs Vite directly, so `npm run dev` or `bun run dev` also work. The other scripts use pnpm.
-
-## Publishing
-
-1. Decide the package name (search and replace `react-mixed-text` in `package.json`, `src`,
-   `tests`, `demo`, `scripts`, `tsconfig.json`, `vitest.config.ts`, docs and issue templates).
-2. Add `repository`, `homepage` and `bugs` fields to `package.json`; set the copyright holder in `LICENSE`.
-3. `pnpm verify`, then `npm login` and `pnpm release` (Changesets: `pnpm changeset`,
-   `pnpm version-packages`).
-
-The release workflow in `.github/workflows/release.yml` is disabled until the repository variable
-`ENABLE_RELEASE` is `true` and an `NPM_TOKEN` secret exists. Nothing publishes by default.
 
 ## License
 
