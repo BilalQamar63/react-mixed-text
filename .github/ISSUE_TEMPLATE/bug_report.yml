@@ -1,0 +1,30 @@
+name: Bug report
+description: Something renders or behaves incorrectly
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Package and version
+      placeholder: 'react-mixed-text 0.1.0'
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: The `text` and props that trigger the problem.
+      render: tsx
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual output
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Browser, framework (Next.js, Vite, …) and versions

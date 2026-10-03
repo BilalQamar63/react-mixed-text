@@ -1,0 +1,92 @@
+{
+  "name": "react-mixed-text",
+  "version": "0.1.0",
+  "description": "React component that gives every word its own font and decoration: mixed, editorial-style text from a plain string.",
+  "license": "MIT",
+  "author": "Bilal Qamar <bilalqamardeen@gmail.com>",
+  "repository": { "type": "git", "url": "git+https://github.com/BilalQamar63/mixed-text.git" },
+  "homepage": "https://github.com/BilalQamar63/mixed-text#readme",
+  "bugs": "https://github.com/BilalQamar63/mixed-text/issues",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "typography",
+    "text",
+    "mixed-fonts",
+    "ssr",
+    "nextjs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@12.8.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "scripts": {
+    "dev": "vite demo",
+    "build": "vite build",
+    "build:demo": "vite build demo",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "size": "node scripts/size.mjs",
+    "bench": "pnpm build && node scripts/bench.mjs",
+    "check:dist": "node scripts/check-dist.mjs",
+    "pack:check": "npm pack --dry-run",
+    "verify": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test && pnpm build && pnpm check:dist && pnpm pack:check",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3",
+    "@eslint/js": "^10.0.1",
+    "@microsoft/api-extractor": "^7.59.3",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.11.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
+    "jsdom": "^30.1.1",
+    "prettier": "^3.9.9",
+    "react": ">=18",
+    "react-dom": "^19.3.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "vite": "^8.3.2",
+    "vite-plugin-dts": "^5.1.1",
+    "vitest": "^5.0.3"
+  }
+}
